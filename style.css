@@ -1,0 +1,147 @@
+/* --- Khai báo biến màu sắc phong cách Nature/Chill --- */
+:root {
+    --bg-color: #fdf5e6;     /* Màu kem giấy cũ */
+    --primary-green: #718355;  /* Xanh lá dịu */
+    --wood-brown: #8b5a2b;    /* Màu gỗ */
+    --text-color: #4a4a4a;
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: 'Quicksand', sans-serif;
+    color: var(--text-color);
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+.game-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* --- Typography (Font chữ) --- */
+h1, h2, h3, .signpost a {
+    font-family: 'Itim', monospace;
+    text-transform: uppercase;
+    color: var(--wood-brown);
+}
+
+h1 { font-size: 3.5rem; text-align: center; margin-bottom: 5px; }
+h2 { font-size: 2rem; border-bottom: 2px dashed var(--primary-green); display: inline-block; margin-bottom: 20px; }
+
+/* --- Thanh điều hướng gỗ --- */
+.signpost {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.signpost ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding: 0;
+}
+
+.signpost a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 8px 15px;
+    background: var(--primary-green);
+    color: white;
+    border-radius: 5px;
+    border-bottom: 4px solid #4f5d3d;
+    transition: 0.2s;
+}
+
+.signpost a:hover {
+    transform: translateY(2px);
+    border-bottom-width: 2px;
+    background: #8aa16b;
+}
+
+/* --- Cấu trúc các Section ô gỗ --- */
+/* (Phần thay đổi chính: Tất cả đều có khung và bóng đổ) */
+header, section {
+    background: white;
+    border: 4px solid var(--wood-brown); /* Khung viền gỗ */
+    border-radius: 15px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 6px 6px 0px #d2b48c; /* Bóng đổ kiểu gỗ */
+}
+
+/* Chỉnh lại Header: Giờ đã có khung và bóng đổ */
+.farmhouse-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.subtitle {
+    font-family: 'Itim', monospace;
+    font-size: 1.4rem;
+    color: var(--primary-green);
+    text-align: center;
+}
+
+/* --- Cấu trúc Danh sách Dọc & Icon --- */
+.about-container, .skills-vertical-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.skill-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border: 2px dashed var(--primary-green); /* Viền mờ bên trong ô lớn */
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.skill-icon {
+    width: 80px;
+    height: 80px;
+    background: #fff;
+    border: 3px solid var(--wood-brown);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.skill-icon span {
+    font-size: 3rem;
+}
+
+.skill-content h3 {
+    margin: 0 0 5px 0;
+    font-size: 1.5rem;
+}
+
+.skill-content p {
+    margin: 0;
+}
+/* Trong file style.css */
+body {
+    /* Đặt hình ảnh background */
+    background-image: url('assets/origbig.png'); /* Thay đổi tên file cho đúng */
+
+    /* Để hình ảnh bao phủ toàn bộ màn hình */
+    background-size: cover; 
+
+    /* Căn giữa hình ảnh */
+    background-position: center; 
+
+    /* Không lặp lại hình ảnh */
+    background-repeat: no-repeat; 
+
+    /* Đặt hình ảnh cố định (tùy chọn, để nội dung cuộn lên trên) */
+    background-attachment: fixed;
+}
