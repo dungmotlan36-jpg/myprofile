@@ -16,7 +16,7 @@ body {
 }
 
 .game-container {
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
 }
 
@@ -70,6 +70,7 @@ header, section {
     padding: 30px;
     margin-bottom: 30px;
     box-shadow: 6px 6px 0px #d2b48c; /* Bóng đổ kiểu gỗ */
+    
 }
 
 /* Chỉnh lại Header: Giờ đã có khung và bóng đổ */
@@ -145,3 +146,4 @@ body {
     /* Đặt hình ảnh cố định (tùy chọn, để nội dung cuộn lên trên) */
     background-attachment: fixed;
 }
+    /* chỉnh ảnh cá nhân cho vừa chuẩn) */
